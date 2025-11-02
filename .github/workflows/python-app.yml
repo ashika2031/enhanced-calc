@@ -22,4 +22,6 @@ jobs:
           pip install -r requirements.txt
           pip install pytest pytest-cov
       - name: Run tests with coverage
-        run: pytest --cov=app --cov-fail-under=90
+        run: 
+            pytest --cov=app --cov-config=.coveragerc --cov-fail-under=90
+
